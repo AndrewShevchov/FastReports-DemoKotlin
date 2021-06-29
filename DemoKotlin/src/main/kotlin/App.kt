@@ -15,14 +15,14 @@ object App {
         val defaultClient = ApiClient(
             "https://fastreport.cloud",
             null,
-            BasicAuthentication("apikey", "****YOUR_APi_KEY****"),
+            BasicAuthentication("apikey", "ip7gpezxdd3yowmbqcc751c6kmea919spxb3uwcdaqfcda5er69o"),
             null
         )
         try {
 
             val root = defaultClient.templatesApi().templateFoldersGetRootFolder(null as String?)
 
-            val bufferedReader: BufferedReader = File("src/Box.frx").bufferedReader()
+            val bufferedReader: BufferedReader = File("Box.frx").bufferedReader()
             val reportFileName = bufferedReader.use { it.readText() }
 
             val report: String = Base64.getEncoder().encodeToString( reportFileName.toByteArray())
