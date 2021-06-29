@@ -15,7 +15,7 @@ object App {
         val defaultClient = ApiClient(
             "https://fastreport.cloud",
             null,
-            BasicAuthentication("apikey", "ip7gpezxdd3yowmbqcc751c6kmea919spxb3uwcdaqfcda5er69o"),
+            BasicAuthentication("apikey", "******YOUR_API_KEY*******"),
             null
         )
         try {
